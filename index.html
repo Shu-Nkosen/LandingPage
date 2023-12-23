@@ -6,27 +6,15 @@
         body {
             font-family: Arial, sans-serif;
         }
-        header {
+        header, footer {
             background-color: #f8f8f8;
             padding: 20px;
             text-align: center;
-        }
-        .subheader {
-            background-color: #e0e0e0; /* サブヘッダーの背景色 */
-            padding: 10px; /* パディング */
-            text-align: center; /* 中央揃え */
-        }
-        main {
-            display: flex; /* Flexboxの追加 */
-            flex-wrap: wrap; /* アイテムが多い場合は折り返す */
-            justify-content: center; /* センタリング */
         }
         .artist {
             margin: 20px;
             padding: 20px;
             border: 1px solid #ddd;
-            flex-basis: 30%; /* 各アーティストの領域を設定 */
-            box-sizing: border-box; /* パディングとボーダーを幅に含める */
         }
         .artist img {
             max-width: 100%;
@@ -43,33 +31,28 @@
     </style>
 </head>
 <body>
-   <header>
+    <header>
         <h1>最近はまっているアーティスト！</h1>
     </header>
-    <div class="subheader">
-        <h2>お気に入りの音楽アーティスト</h2> <!-- サブヘッダーのタイトル -->
-        <p>先日、ずっと真夜中でいいのに。のライブに行ってきました！</p> <!-- 新しい文章 -->
-    </div>
     <main>
         <section class="artist">
             <h2>Suchmos</h2>
-            <img src="/Suchmos.png" alt="Suchmos">
+            <img src="/mnt/data/Suchmos.png" alt="Suchmos">
             <p>「Suchmos」は、ジャズとロックを融合したスタイルで知られ、洗練されたサウンドが特徴です。</p>
         </section>
         <section class="artist">
             <h2>ヤングスキニー</h2>
-            <img src="/young.png" alt="ヤングスキニー">
+            <img src="/mnt/data/young.png" alt="ヤングスキニー">
             <p>「ヤングスキニー」は、新進気鋭のアーティストで、独自のスタイルとエネルギッシュなパフォーマンスが魅力です。</p>
         </section>
         <section class="artist">
             <h2>ずっと真夜中でいいのに。</h2>
-            <img src="/zutomayo.png" alt="ずっと真夜中でいいのに。">
+            <img src="/mnt/data/zutomayo.png" alt="ずっと真夜中でいいのに。">
             <p>「ずっと真夜中でいいのに。」は、ジャンルにとらわれない独特のサウンドと、心に響く歌詞が特徴のバンドです。</p>
         </section>
     </main>
     <footer>
-        <p>© 2023 最近はまっているアーティスト！</p>
+        <p>c 2023 最近はまっているアーティスト！</p>
     </footer>
 </body>
 </html>
-

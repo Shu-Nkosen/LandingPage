@@ -11,10 +11,17 @@
             padding: 20px;
             text-align: center;
         }
+        main {
+            display: flex; /* Flexboxの追加 */
+            flex-wrap: wrap; /* アイテムが多い場合は折り返す */
+            justify-content: center; /* センタリング */
+        }
         .artist {
             margin: 20px;
             padding: 20px;
             border: 1px solid #ddd;
+            flex-basis: 30%; /* 各アーティストの領域を設定 */
+            box-sizing: border-box; /* パディングとボーダーを幅に含める */
         }
         .artist img {
             max-width: 100%;
@@ -35,6 +42,7 @@
         <h1>最近はまっているアーティスト！</h1>
     </header>
     <main>
+    <main>
         <section class="artist">
             <h2>Suchmos</h2>
             <img src="/Suchmos.png" alt="Suchmos">
@@ -51,8 +59,10 @@
             <p>「ずっと真夜中でいいのに。」は、ジャンルにとらわれない独特のサウンドと、心に響く歌詞が特徴のバンドです。</p>
         </section>
     </main>
+    </main>
     <footer>
         <p>© 2023 最近はまっているアーティスト！</p>
     </footer>
 </body>
 </html>
+

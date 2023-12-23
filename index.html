@@ -6,10 +6,15 @@
         body {
             font-family: Arial, sans-serif;
         }
-        header, footer {
+        header {
             background-color: #f8f8f8;
             padding: 20px;
             text-align: center;
+        }
+        .subheader {
+            background-color: #e0e0e0; /* サブヘッダーの背景色 */
+            padding: 10px; /* パディング */
+            text-align: center; /* 中央揃え */
         }
         main {
             display: flex; /* Flexboxの追加 */
@@ -38,10 +43,13 @@
     </style>
 </head>
 <body>
-    <header>
+   <header>
         <h1>最近はまっているアーティスト！</h1>
     </header>
-    <main>
+    <div class="subheader">
+        <h2>お気に入りの音楽アーティスト</h2> <!-- サブヘッダーのタイトル -->
+        <p>先日、ずっと真夜中でいいのに。のライブに行ってきました！</p> <!-- 新しい文章 -->
+    </div>
     <main>
         <section class="artist">
             <h2>Suchmos</h2>
@@ -58,7 +66,6 @@
             <img src="/zutomayo.png" alt="ずっと真夜中でいいのに。">
             <p>「ずっと真夜中でいいのに。」は、ジャンルにとらわれない独特のサウンドと、心に響く歌詞が特徴のバンドです。</p>
         </section>
-    </main>
     </main>
     <footer>
         <p>© 2023 最近はまっているアーティスト！</p>
